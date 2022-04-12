@@ -15,6 +15,25 @@ h2 {
     padding: 0;
     display: inline;
 }
+
+h1 {
+    color: white;
+}
+p {
+    margin-top: 1rem;
+    color: white;
+    text-align: justify;
+}
+.about-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-box > div {
+    max-width: 600px;
+}
+
 .fixed-table-toolbar > .bs-bars {
     width: 100%;
 }
