@@ -3,269 +3,274 @@
     <head>
         <title>Open Bible Project</title>
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- Style -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/css/fresh-bootstrap-table.css" rel="stylesheet" />
+
+        <!-- Fonts and icons -->
+        <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,300" rel="stylesheet" type="text/css">
         <link href="./style.css" rel="stylesheet">
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="container">
-            <h2>Find resources in your language</h2> 
-            <input class="form-control" id="input" type="text" placeholder="Search..">
-            <br>
-            <table class="table table-bordered table-striped">
-                <thead>
-                    <tr>
-                        <th>Language</th>
-                    </tr>
-                </thead>
-                <tbody id="table">
-                    <tr>
-                        <td><a href="pages/afrikaans.html">Afrikaans</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/albanian.html">Albanian</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/amharic.html">Amharic</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/arabic.html">Arabic</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/armenian.html">Armenian</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/basque.html">Basque</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/bengali.html">Bengali</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/byelorussian.html">Byelorussian</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/burmese.html">Burmese</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/bulgarian.html">Bulgarian</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/catalan.html">Catalan</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/czech.html">Czech</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/chinese.html">Chinese</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/croatian.html">Croatian</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/danish.html">Danish</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/dari.html">Dari</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/dzongkha.html">Dzongkha</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/dutch.html">Dutch</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/english.html">English</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/esparanto.html">Esperanto</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/estonian.html">Estonian</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/faroese.html">Faroese</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/farsi.html">Farsi</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/finnish.html">Finnish</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/french.html">French</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/gaelic.html">Gaelic</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/gelician.html">Galician</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/german.html">German</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/greek.html">Greek</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/hebrew.html">Hebrew</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/hindi.html">Hindi</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/hungarian.html">Hungarian</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/icelandic.html">Icelandic</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/indonesian.html">Indonesian</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/inuktitut.html">Inuktitut (Eskimo)</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/italian.html">Italian</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/japanese.html">Japanese</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/khmer.html">Khmer</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/korean.html">Korean</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/kurdish.html">Kurdish</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/laotian.html">Laotian</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/latvian.html">Latvian</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/lappish.html">Lappish</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/lithuanian.html">Lithuanian</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/macedonian.html">Macedonian</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/malay.html">Malay</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/maltese.html">Maltese</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/nepali.html">Nepali</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/norwegian.html">Norwegian</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/pashto.html">Pashto</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/polish.html">Polish</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/portuguese.html">Portuguese</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/romanian.html">Romanian</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/russian.html">Russian</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/scots.html">Scots</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/serbian.html">Serbian</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/slovak.html">Slovak</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/slovenian.html">Slovenian</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/somali.html">Somali</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/spanish.html">Spanish</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/swedish.html">Swedish</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/swahili.html">Swahili</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/tagalog-filipino.html">Tagalog-Filipino</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/tajik.html">Tajik</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/tamil.html">Tamil</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/thai.html">Thai</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/tibetan.html">Tibetan</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/tigrinya.html">Tigrinya</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/tongan.html">Tongan</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/turkish.html">Turkish</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/turkmen.html">Turkmen</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/ucrainian.html">Ucrainian</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/urdu.html">Urdu</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/uzbek.html">Uzbek</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/vietnamese.html">Vietnamese</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="pages/welsh.html">Welsh</a></td>
-                    </tr>
-                </tbody>
+        <div class="fresh-table full-color-azure full-screen-table" style="min-height: 100vh;">
+            <!--
+            Available colors for the full background: full-color-blue, full-color-azure, full-color-green, full-color-red, full-color-orange
+            Available colors only for the toolbar: toolbar-color-blue, toolbar-color-azure, toolbar-color-green, toolbar-color-red, toolbar-color-orange
+            -->
+        
+            <div class="toolbar">
+                <a href="about.html"><button class="btn btn-default">About</button></a>
+                <h2>Open Bible Project</h2>
+            </div>
+        
+            <table id="fresh-table" class="table">
+            <thead>
+                <th data-field="language">Select your language</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="pages/afrikaans.html">Afrikaans</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/albanian.html">Albanian</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/amharic.html">Amharic</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/arabic.html">Arabic</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/armenian.html">Armenian</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/basque.html">Basque</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/bengali.html">Bengali</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/byelorussian.html">Byelorussian</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/burmese.html">Burmese</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/bulgarian.html">Bulgarian</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/catalan.html">Catalan</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/czech.html">Czech</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/chinese.html">Chinese</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/croatian.html">Croatian</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/danish.html">Danish</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/dari.html">Dari</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/dzongkha.html">Dzongkha</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/dutch.html">Dutch</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/english.html">English</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/esparanto.html">Esperanto</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/estonian.html">Estonian</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/faroese.html">Faroese</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/farsi.html">Farsi</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/finnish.html">Finnish</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/french.html">French</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/gaelic.html">Gaelic</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/gelician.html">Galician</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/german.html">German</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/greek.html">Greek</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/hebrew.html">Hebrew</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/hindi.html">Hindi</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/hungarian.html">Hungarian</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/icelandic.html">Icelandic</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/indonesian.html">Indonesian</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/inuktitut.html">Inuktitut (Eskimo)</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/italian.html">Italian</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/japanese.html">Japanese</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/khmer.html">Khmer</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/korean.html">Korean</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/kurdish.html">Kurdish</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/laotian.html">Laotian</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/latvian.html">Latvian</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/lappish.html">Lappish</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/lithuanian.html">Lithuanian</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/macedonian.html">Macedonian</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/malay.html">Malay</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/maltese.html">Maltese</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/nepali.html">Nepali</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/norwegian.html">Norwegian</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/pashto.html">Pashto</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/polish.html">Polish</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/portuguese.html">Portuguese</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/romanian.html">Romanian</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/russian.html">Russian</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/scots.html">Scots</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/serbian.html">Serbian</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/slovak.html">Slovak</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/slovenian.html">Slovenian</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/somali.html">Somali</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/spanish.html">Spanish</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/swedish.html">Swedish</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/swahili.html">Swahili</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/tagalog-filipino.html">Tagalog-Filipino</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/tajik.html">Tajik</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/tamil.html">Tamil</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/thai.html">Thai</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/tibetan.html">Tibetan</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/tigrinya.html">Tigrinya</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/tongan.html">Tongan</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/turkish.html">Turkish</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/turkmen.html">Turkmen</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/ucrainian.html">Ucrainian</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/urdu.html">Urdu</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/uzbek.html">Uzbek</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/vietnamese.html">Vietnamese</a></td>
+                </tr>
+                <tr>
+                    <td><a href="pages/welsh.html">Welsh</a></td>
+                </tr>
+            </tbody>
             </table>
         </div>
-          
-        <script>
-        $(document).ready(function(){
-            $("#input").on("keyup", function() {
-                var value = $(this).val().toLowerCase();
-                $("#table tr").filter(function() {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                });
-            });
-        });
-        </script>
           
 
 
         
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!-- Javascript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/bootstrap-table/dist/bootstrap-table.min.js"></script>
+
+        <script src="./scripts.js" type="text/javascript"></script>
     </body>
 </html>
