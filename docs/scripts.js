@@ -37,14 +37,14 @@ $(function () {
     toolbar: '.toolbar',
 
     search: true,
-    showRefresh: true,
-    showToggle: true,
-    showColumns: true,
+    showRefresh: false,
+    showToggle: false,
+    showColumns: false,
     pagination: true,
     striped: true,
     sortable: true,
-    pageSize: 15,
-    pageList: [8, 15, 25, 50, 100],
+    pageSize: 25,
+    pageList: [8, 25, 50, 100],
 
     formatShowingRows: function (pageFrom, pageTo, totalRows) {
         return ''
