@@ -40,7 +40,7 @@ $(function () {
     showRefresh: false,
     showToggle: false,
     showColumns: false,
-    pagination: true,
+    pagination: false,
     striped: true,
     sortable: true,
     pageSize: 25,
