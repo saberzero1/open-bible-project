@@ -1,4 +1,4 @@
-# open-bible-project
+# Open Bible Project
 Curated list of public Bible resources.
 
 <a href="https://openbibleproject.org">Visit the website</a>
