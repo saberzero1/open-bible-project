@@ -57,24 +57,27 @@ $(function () {
 })
 
 function populateTable() {
-
-    var tableContent = '';
-
-
-    $.get( '../links/' + $(document).attr('title').split(' ')[0] + '.txt', function( data ) {
-
-      //this will split the string into array line by line
-      var lineByline = data.split('\n');
-        //here we're itraing the array which you've created and printing the values
-        $.each(lineByline , function(key,value){
-            tableContent += '<tr>';
-            tableContent += '<td><a href="' + value.split(' @@@ ')[0] + '">' + value.split(' @@@ ')[1] + '</a></td>';
-            tableContent += '<td>' + value.split(' @@@ ')[2] + '</td>';
-            tableContent += '</tr>';
+    if ($(document).attr('title').split(' ')[0] != 'Open') {
+        
+        var tableContent = '';
+    
+    
+        $.get( '../links/' + $(document).attr('title').split(' ')[0] + '.txt', function( data ) {
+    
+        //this will split the string into array line by line
+        var lineByline = data.split('\n');
+            //here we're itraing the array which you've created and printing the values
+            $.each(lineByline , function(key,value){
+                tableContent += '<tr>';
+                tableContent += '<td><a href="' + value.split(' @@@ ')[0] + '">' + value.split(' @@@ ')[1] + '</a></td>';
+                tableContent += '<td>' + value.split(' @@@ ')[2] + '</td>';
+                tableContent += '</tr>';
+            });
+    
+            $('#fresh-table > tbody').html(tableContent);
         });
+    }
 
-        $('#fresh-table > tbody').html(tableContent);
-    });
 };
 
 populateTable();
