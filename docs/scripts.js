@@ -73,7 +73,7 @@ function populateTable() {
             tableContent += '</tr>';
         });
 
-        $('#fresh-table').html(tableContent);
+        $('#fresh-table > tbody').html(tableContent);
     });
 };
 
