@@ -61,13 +61,11 @@ function populateTable() {
         
         var tableContent = '';
     
-        let title = $(document).attr('title').split(' ')[0].toLowerCase();
-        let link = "" + title;
     
-        $.get( '../links/' + link + '.txt', function( data ) {
+        $.get( '../links/' + $(document).attr('title').split(' ')[0].toLowerCase() + '.txt', function( data ) {
     
         //this will split the string into array line by line
-        var lineByline = data.split('\n');
+        var lineByline = data.split('\n').slice(0, -1);
             //here we're itraing the array which you've created and printing the values
             $.each(lineByline , function(key,value){
                 tableContent += '<tr>';
