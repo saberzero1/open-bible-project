@@ -62,7 +62,7 @@ function populateTable() {
         var tableContent = '';
     
     
-        $.get( '../links/' + $(document).attr('title').split(' ')[0] + '.txt', function( data ) {
+        $.get( '../links/' + $(document).attr('title').split(' ')[0].val().toLowerCase() + '.txt', function( data ) {
     
         //this will split the string into array line by line
         var lineByline = data.split('\n');
