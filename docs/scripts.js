@@ -68,8 +68,8 @@ function populateTable() {
         //here we're itraing the array which you've created and printing the values
         $.each(lineByline , function(key,value){
             tableContent += '<tr>';
-            tableContent += '<td><a href="' + value.split(' - ')[0] + '">' + value.split(' - ')[1] + '</a></td>';
-            tableContent += '<td>' + value.split(' - ')[2] + '</td>';
+            tableContent += '<td><a href="' + value.split(' @@@ ')[0] + '">' + value.split(' @@@ ')[1] + '</a></td>';
+            tableContent += '<td>' + value.split(' @@@ ')[2] + '</td>';
             tableContent += '</tr>';
         });
 
