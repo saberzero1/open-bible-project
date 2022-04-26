@@ -67,7 +67,7 @@ function populateTable() {
 
         tableElement = document.getElementById('fresh-table');
         tableBody = tableElement.getElementsByTagName('tbody')[0];
-        for (var x =0; x <len(data); x++){
+        for (var x = 0; x < data.length; x++){
             tableBody.innerHTML = tableBody.innerHTML + '<tr><td><a href="' + data[x].url +'">' + data[x].name + '</a></td> <td>' + data[x].description +'</td></tr>';  
         };
     
