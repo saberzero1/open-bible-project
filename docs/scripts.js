@@ -67,7 +67,7 @@ function populateTable() {
 
         tableElement = document.getElementById('fresh-table');
         tableBody = tableElement.getElementsByTagName('tbody')[0];
-        if (!(data.length > 0)) {
+        if (data.length > 0) {
             tableBody.innerHTML = '';
         }
         for (var x = 0; x < data.length; x++){
