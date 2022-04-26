@@ -62,19 +62,25 @@ function populateTable() {
         var tableContent = '';
     
     
-        $.get( '../links/' + $(document).attr('title').split(' ')[0].toLowerCase() + '.txt', function( data ) {
+        $.get( '../links/' + $(document).attr('title').split(' ')[0].toLowerCase() + '.json', function( data ) {
+
+
+        tableElement = document.getElementById('fresh-table').getelementsByTagName('tbody')[0];
+        for (var x =0; x <len(data); x++){
+            tableElement.innerHTML = tableElement.innerHTML + '<tr><td><a href="' + data[x].url +'">' + data[x].name + '</a></td> <td>' + data[x].description +'</td></tr>';  
+        };
     
         //this will split the string into array line by line
-        var lineByline = data.split('\n').slice(0, -1);
+        //var lineByline = data.split('\n').slice(0, -1);
             //here we're itraing the array which you've created and printing the values
-            $.each(lineByline , function(key,value){
-                tableContent += '<tr>';
-                tableContent += '<td><a href="' + value.split(' @@@ ')[0] + '">' + value.split(' @@@ ')[1] + '</a></td>';
-                tableContent += '<td>' + value.split(' @@@ ')[2] + '</td>';
-                tableContent += '</tr>';
-            });
+            //$.each(lineByline , function(key,value){
+           //     tableContent += '<tr>';
+         //       tableContent += '<td><a href="' + value.split(' @@@ ')[0] + '">' + value.split(' @@@ ')[1] + '</a></td>';
+         //       tableContent += '<td>' + value.split(' @@@ ')[2] + '</td>';
+          //      tableContent += '</tr>';
+          //  });
     
-            $('#fresh-table > tbody').html(tableContent);
+         //   $('#fresh-table > tbody').html(tableContent);
         });
     }
 
