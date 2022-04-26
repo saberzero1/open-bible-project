@@ -65,9 +65,10 @@ function populateTable() {
         $.get( '../links/' + $(document).attr('title').split(' ')[0].toLowerCase() + '.json', function( data ) {
 
 
-        tableElement = document.getElementById('fresh-table').getelementsByTagName('tbody')[0];
+        tableElement = document.getElementById('fresh-table');
+        tableBody = tableElement.getElementsByTagName('tbody')[0];
         for (var x =0; x <len(data); x++){
-            tableElement.innerHTML = tableElement.innerHTML + '<tr><td><a href="' + data[x].url +'">' + data[x].name + '</a></td> <td>' + data[x].description +'</td></tr>';  
+            tableBody.innerHTML = tableBody.innerHTML + '<tr><td><a href="' + data[x].url +'">' + data[x].name + '</a></td> <td>' + data[x].description +'</td></tr>';  
         };
     
         //this will split the string into array line by line
