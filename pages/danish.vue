@@ -4,6 +4,6 @@
 
 <script>
 export default {
-  name: 'danishPage'
+  name: 'DanishPage'
 }
 </script>
