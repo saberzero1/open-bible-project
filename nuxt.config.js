@@ -6,6 +6,10 @@ export default {
     base: '/'
   },
 
+  generate: {
+    dir: 'docs'
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'open-bible-project',
